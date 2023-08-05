@@ -1,3 +1,7 @@
+from django.contrib import admin
+from django.urls import path
+from apps.tasks.views import *
+
 """
 URL configuration for fraude project.
 
@@ -19,4 +23,8 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('inicio/',inicio, name='inicio'),
+    path('create/',create, name='create'),
+    path('view/',view, name='view'),
+    path('edit/',edit, name='edit'),
 ]
