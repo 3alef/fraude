@@ -1,19 +1,20 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from apps.tasks import *
 # Create your views here.
 
 #home
 def inicio(request):
-    return HttpResponse("<h1>Binevendio</h1>")
+    return render(request,'paginas/inicio.html')
 
 #create
 def create(request):
-    return HttpResponse("<h1>Create</h1>")
+    return render(request,'paginas/create.html')
 
-#home
+#view
 def view(request):
-    return HttpResponse("<h1>view</h1>")
+    return render(request,'paginas/view.html')
 
-#home
+#edit
 def edit(request):
-    return HttpResponse("<h1>edit</h1>")
+    return render(request,'paginas/edit.html')

@@ -1,0 +1,56 @@
+/*-----------------------
+-----------------------*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#observations {
+    resize:none;
+}
+
+.container {
+    display:flex;
+    width: 100%;
+    padding: 5px;
+    margin: 0px;
+    justify-content: space-around;
+    
+} 
+
+.columna-izq {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-content:flex-start
+    width: 700px;
+    padding: 20px 5px 5px 10px
+   
+
+}
+
+.columna-der {
+    width: 500px;
+    padding: 20px 5px 5px 10px;
+
+}
+
+#date_work{
+    width:200px;
+    padding:5px;
+}
+.form-control{
+    width: 400px;
+}
+
+.form-select {
+    animation: none;
+    width:300px;
+}
+
+.card{
+    display: flex;
+
+}
