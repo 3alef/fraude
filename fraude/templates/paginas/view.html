@@ -2,32 +2,40 @@
 
 {%block titulo %} {%endblock%}
 
-{% block contenido %} 
+{% block body %} 
 
-<div class="card">
-    
+    <div class="row align-items-start">
+        <div class="col">
+            <div class="p-2 g-col-6">
+                <input type="date" id="txt_fecha_work" class="form-control" placeholder="Fecha">
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-2 g-col-6">
+                <input type="text" id="txt_direccion" class="form-control" placeholder="direccion">
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-2 g-col-6">
+                <input type="number" id="txt_cliente" class="form-control" placeholder="cliente">
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-2 g-col-6">
+                <input type="text" id="txt_ruta" class="form-control" placeholder="ruta">
+            </div>
+        </div>
 
-        <div class="mb-2">
-            <label for="fecha" class="form-label">Fecha</label>
-            <input type="date" class="form-control" id="fecha">
-       
-       
-            <label for="cliente" class="form-label">Cliente</label>
-            <input type="number" class="form-control" id="cliente">
-     
-
-            <label for="direccion" class="form-label">Direccion</label>
-            <input type="text" class="form-control" id="direccion">
-      
-
-            <label for="ruta" class="form-label">Ruta</label>
-            <input type="number" class="form-control" id="ruta">   
-            <button type="submit" class="btn btn-primary">Buscar</button>      
-         </div>       
-</div>  
+        <div class="col">
+           <div class="p-2 g-col-6">
+             <button type="submit" class="btn btn-primary">Buscar</button>
+           </div>
+        </div>
+        
+    </div>        
 <div class="card-body">
         <table class="table">
-          <thead class="table-dark">
+          <thead class="table-white">
               <tr>
                    <th>fecha</th>
                    <th>direccion</th>

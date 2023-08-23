@@ -1,10 +1,8 @@
-/*-----------------------
------------------------*/
-
-* {
+/* *{  
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    padding:0;
+    margin:0;
+
 }
 
 #observations {
@@ -13,44 +11,20 @@
 
 .container {
     display:flex;
+    flex-wrap: wrap;
     width: 100%;
     padding: 5px;
-    margin: 0px;
-    justify-content: space-around;
+    margin: 5px;
+    
     
 } 
 
 .columna-izq {
-    display: flex;
     flex-direction: column;
-    flex-wrap:wrap;
-    align-content:flex-start
-    width: 700px;
-    padding: 20px 5px 5px 10px
-   
+    justify-content: flex-end;
 
 }
-
-.columna-der {
-    width: 500px;
-    padding: 20px 5px 5px 10px;
-
-}
-
-#date_work{
-    width:200px;
-    padding:5px;
-}
-.form-control{
-    width: 400px;
-}
-
-.form-select {
-    animation: none;
-    width:300px;
-}
-
-.card{
-    display: flex;
-
-}
+.align-items-start {
+    width:100%;
+    align-items: center;
+} */

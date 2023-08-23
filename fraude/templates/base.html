@@ -12,7 +12,7 @@
     rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     
     <!--- CSS-->
-    <link  rel="stylesheet" href={% static "css/style.css" %} >
+    <link href={% static "css/style.css" %} rel="stylesheet">
     
     <title>{%block titulo %}  {%endblock%}</title>
     
@@ -37,8 +37,9 @@
           </div>
         </div>
     </nav>
-    
-      {% block contenido %} {%endblock%}
+    <div class="container">
+      {% block body %} {%endblock%}
+    </div>
       
 
 </body>
